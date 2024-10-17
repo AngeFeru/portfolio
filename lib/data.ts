@@ -2,22 +2,23 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-//import corpcommentImg from "@/public/corpcomment.png";
-//import rmtdevImg from "@/public/rmtdev.png";
-//import wordanalyticsImg from "@/public/wordanalytics.png";
+import corpcommentImg from "@/public/corpcomment.png";
+import rmtdevImg from "@/public/rmtdev.png";
+import wordanalyticsImg from "@/public/wordanalytics.png";
+import { PiCertificateBold } from "react-icons/pi";
 
 export const links = [
   {
     name: "Inicio",
-    hash: "#home",
+    hash: "#Inicio",
   },
   {
     name: "Acerca de",
-    hash: "#about",
+    hash: "#Acercade",
   },
   {
     name: "Proyectos",
-    hash: "#projects",
+    hash: "#proyectos",
   },
   {
     name: "Competencias",
@@ -25,62 +26,54 @@ export const links = [
   },
   {
     name: "Experiencia",
-    hash: "#experience",
+    hash: "#experiencia",
   },
   {
     name: "Contacto",
-    hash: "#contact",
+    hash: "#contacto",
   },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+    title: "Administrativo | Help Desk",
+    location: "Montevideo, UY",
+    description2:"ANGLO Palacio         ",
+    description:"",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2020 - Presente",
   },
 ] as const;
 
+export const experiencesData2 = [
+  {
+    title: "Licenciatura en Sistemas",
+    location: "Montevideo, UY",
+    date:"2023-Presente",
+    description:"Universidad ORT",
+    description2:"Estudiante de la carrera de Licenciatura, cursando 3er año.",
+    icon: React.createElement(LuGraduationCap),
+
+  },
+  {
+    title: "Analista GeneXus",
+    location: "Montevideo, UY",
+    description2:
+      "Realice el curso de Analista Genexus Junior, donde aprendi las principales caracteristicas de funcionamiento de la herramienta.",
+      description:"",
+    icon: React.createElement(PiCertificateBold),
+    date: "2024",
+  },
+] as const;
+
+
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "GeneXus",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-   // imageUrl: corpcommentImg,
-  },
-  {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-   // imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    //imageUrl: wordanalyticsImg,
+      "Durante el curso que realice, creamos una aplicacion para administrar compras",
+    tags: ["GeneXus"],
+    imageUrl: corpcommentImg,
   },
 ] as const;
 
@@ -94,14 +87,10 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
+  "Oracle SQL",
+  "Haskell",
+  "Java",
+  "GeneXus",
   "Python",
-  "Django",
-  "Framer Motion",
+  "Excel",
 ] as const;

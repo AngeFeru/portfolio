@@ -7,10 +7,17 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import Link from "next/link";
 import { FaGithubSquare } from "react-icons/fa";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function intro() {
+  const { ref } = useSectionInView("Inicio", 0.5);
+
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
+    <section
+      ref={ref}
+      id="Inicio"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[150rem] "
+    >
       <div className="flex itemns-center justify-center">
         <div className="relative">
           <motion.div
@@ -22,7 +29,7 @@ export default function intro() {
             }}
           >
             <Image
-              src="/PhotoCV.png" // Direct path from public folder
+              src="/PhotoCV.png" 
               alt="Angelo Foto"
               width={192}
               height={192}
@@ -48,7 +55,7 @@ export default function intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-1 text-2xl font-medium !leading-[1.5] sm:text-2xl"
+        className="mb-10 mt-4 px-1 text-2xl font-medium !leading-[1.5] sm:text-3xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
