@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
+import gxImg from "@/public/gx.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import { PiCertificateBold } from "react-icons/pi";
@@ -28,6 +28,10 @@ export const links = [
     name: "Experiencia",
     hash: "#experiencia",
   },
+ /* {
+    name: "Experiencia2",
+    hash: "#experiencia2",
+  },*/
   {
     name: "Contacto",
     hash: "#contacto",
@@ -44,6 +48,7 @@ export const experiencesData = [
     date: "2020 - Presente",
   },
 ] as const;
+
 
 export const experiencesData2 = [
   {
@@ -73,7 +78,7 @@ export const projectsData = [
     description:
       "Durante el curso que realice, creamos una aplicacion para administrar compras",
     tags: ["GeneXus"],
-    imageUrl: corpcommentImg,
+    imageUrl: gxImg,
   },
 ] as const;
 
