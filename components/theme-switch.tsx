@@ -1,8 +1,8 @@
 "use client"
 
 import { BsMoon, BsSun } from 'react-icons/bs'
-import React from 'react';import { useTheme } from '@/context/theme-context';
- { }
+import React from 'react';
+import { useTheme } from '@/context/theme-context';
 
 export default function ThemeSwitch() {
   const { theme,toggleTheme } = useTheme();
