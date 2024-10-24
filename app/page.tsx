@@ -10,7 +10,7 @@ import ReactGA from 'react-ga4';
 
 
 export default function Home() {
-  ReactGA.initialize('9862738630');
+  ReactGA.initialize('G-DHL39DMW3S');
   return (
     <main className="flex flex-col items-center px-4">
       <Intro />
